@@ -6,7 +6,13 @@
 ![UI](https://img.shields.io/badge/UI-Custom_CSS-2f6fed?style=for-the-badge&logo=css3)
 
 ## 📌 Proje Hakkında
-Bu proje, geleneksel kütüphane otomasyonlarını bir adım ileriye taşıyarak; içerisinde **E-Ticaret mantığında sepet sistemi**, **kullanıcı cüzdan yönetimi** ve **dinamik duyuru sistemi** barındıran profesyonel bir web uygulamasıdır.
+
+Bu proje, geleneksel ve statik kütüphane otomasyonlarının sınırlarını aşarak, modern bir **"E-Kiralama"** ve **Dijital Cüzdan** platformuna dönüşmüş yenilikçi bir web uygulamasıdır. Klasik sistemlerdeki basit "kitabı al ve iade et" mantığının ötesine geçen bu yazılım, kullanıcılara güncel bir e-ticaret sitesindeymiş gibi dinamik bir deneyim sunmayı hedefler.
+
+Sistemin kalbinde, kullanıcıların hesaplarına entegre edilen **Cüzdan (Bakiye)** ve **Sepet Mimarisi** yer alır. Üyeler, kiralayacakları kitapları anında üzerlerine almak yerine önce sepetlerine ekler, toplam kiralama bedelini TL formatında görüntüler ve işlemlerini tek tıkla sanal bakiyeleri üzerinden tamamlarlar. Bu yapı, hem toplu işlemleri tek seferde halletmeyi sağlar hem de kütüphane ekosistemine gerçekçi bir finansal simülasyon katar.
+
+Gelişmiş kullanıcı deneyiminin yanı sıra, yönetimsel (Admin) tarafta da tam yetkili bir kontrol mekanizması sunulmaktadır. Yöneticiler; üyelerin cüzdanlarına bakiye yükleyebilir, kullanıcıların kiralama geçmişlerini anlık olarak izleyebilir ve sistemin merkezindeki **Duyuru Panosu** üzerinden tüm üyelere eşzamanlı bilgilendirmeler geçebilirler.
+Teknik açıdan veri güvenliğini (Data Integrity) merkeze alan sistem; kiralama anındaki kitabın değerini dondurarak (`rental_price`) sonradan oluşabilecek fiyat değişikliklerinden etkilenmemeyi sağlar. Ayrıca iade süreçlerinde, stok ve bakiye güncellemelerinin yarıda kesilip veri kaybı yaratmasını önlemek adına güçlü **PDO Transaction (`beginTransaction`)** mimarisiyle desteklenmiştir.
 
 ## 🚀 Öne Çıkan Özellikler
 * **💳 Dijital Cüzdan:** Kullanıcıların bakiyeleri üzerinden kitap kiralama ücretlerini ödeyebilmesi.
@@ -49,13 +55,11 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 
 ---
 
-## 🚀 Hızlı Kurulum (Geliştirme Ortamı)
+## ⚙️ Hızlı Kurulum
+1. Repoyu klonlayın: `git clone https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git`
+2. `library_system.sql` dosyasını veritabanınıza içe aktarın.
+3. `config.php` içindeki DB bilgilerini (Host, DB Name, User, Password) kendi sunucunuza göre düzenleyin.
+4. Tarayıcınızdan `index.php` dosyasını çalıştırın.
 
-**Gereksinimler**
-* Git, PHP 8.x+, MySQL/MariaDB
-* (Opsiyonel) VS Code veya tercih ettiğiniz IDE
-
-**1️⃣ Repoyu Klonlayın**
-```bash
-git clone [https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git](https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git)
-cd Kutuphane-Sistemi
+---
+*Geliştirici Notu: Bu yazılım, modern PHP pratikleri ve güvenli kodlama standartları gözetilerek bir ekip çalışması sonucunda ortaya çıkarılmıştır.*
