@@ -55,10 +55,20 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 2. `library_system.sql` dosyasını veritabanınıza içe aktarın.
 3. `config.php` içindeki DB bilgilerini (Host, DB Name, User, Password) kendi sunucunuza göre düzenleyin.
 4. Tarayıcınızdan `index.php` dosyasını çalıştırın.
+1️⃣ Repoyu Klonlayın
 
+Bash
+git clone https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git
+cd Kutuphane-Sistemi
+2️⃣ Veritabanı
+
+Sunucunuzun phpMyAdmin paneline girin ve bir veritabanı oluşturun.
+
+Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar (Import) seçeneği ile yükleyin.
+
+3️⃣ Yapılandırma
 ### 3️⃣ Yapılandırma
 `config.php` dosyasını açarak aşağıdaki alanları kendi sisteminize göre güncelleyin:
-
 <pre>
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'veritabani_adi');
@@ -66,6 +76,13 @@ define('DB_USER', 'kullanici_adi');
 define('DB_PASS', 'sifreniz');
 </pre>
 
+4️⃣ Uygulamayı Çalıştırın
+
+Dosyaları lokal sunucu dizininize (htdocs veya www) taşıyın.
+
+Tarayıcınızdan uygulamaya erişin:
+
+Uygulama Adresi: http://localhost/Kutuphane-Sistemi/index.php
 
 
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Bu, kodun açık kaynak olduğu, ticari ve özel kullanıma izin verdiği, ancak yazılımın "olduğu gibi" sunulduğu ve geliştiricinin herhangi bir sorumluluk kabul etmediği anlamına gelir. 
