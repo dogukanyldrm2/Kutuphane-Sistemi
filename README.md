@@ -68,18 +68,17 @@ Sunucunuzun phpMyAdmin paneline girin ve bir veritabanı oluşturun.
 
 Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar (Import) seçeneği ile yükleyin.
 
- 3️⃣ Yapılandırma
-config.php dosyasını bir metin düzenleyici ile açarak veritabanı bağlantı bilgilerinizi kendi yerel veya sunucu ayarlarınıza göre güncelleyin:
 ### 3️⃣ Yapılandırma
 `config.php` dosyasını açarak aşağıdaki alanları kendi sisteminize göre güncelleyin:
 
-text
+```text
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'veritabani_adi');
 define('DB_USER', 'kullanici_adi');
-define('DB_PASS', 'sifreniz');´´´
+define('DB_PASS', 'sifreniz');
 
----
+
+
 
 
 ## ⚖️ Lisans
