@@ -71,11 +71,10 @@ Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar 
 3️⃣ Yapılandırma
 config.php dosyasını açarak veritabanı bağlantı bilgilerini kendi sisteminize göre güncelleyin:
 
-PHP
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'veritabani_adi');
-define('DB_USER', 'kullanici_adi');
-define('DB_PASS', 'sifreniz');
+**define('DB_HOST', 'localhost');
+**define('DB_NAME', 'veritabani_adi');
+**define('DB_USER', 'kullanici_adi');
+**define('DB_PASS', 'sifreniz');
 ---
 
 ## ⚖️ Lisans
