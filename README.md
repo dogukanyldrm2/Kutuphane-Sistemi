@@ -49,11 +49,13 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 
 ---
 
-## ⚙️ Hızlı Kurulum
-1. Repoyu klonlayın: `git clone https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git`
-2. `library_system.sql` dosyasını veritabanınıza içe aktarın.
-3. `config.php` içindeki DB bilgilerini (Host, DB Name, User, Password) kendi sunucunuza göre düzenleyin.
-4. Tarayıcınızdan `index.php` dosyasını çalıştırın.
+## 🚀 Hızlı Kurulum (Geliştirme Ortamı)
 
----
-*Geliştirici Notu: Bu yazılım, modern PHP pratikleri ve güvenli kodlama standartları gözetilerek bir ekip çalışması sonucunda ortaya çıkarılmıştır.*
+**Gereksinimler**
+* Git, PHP 8.x+, MySQL/MariaDB
+* (Opsiyonel) VS Code veya tercih ettiğiniz IDE
+
+**1️⃣ Repoyu Klonlayın**
+```bash
+git clone [https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git](https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git)
+cd Kutuphane-Sistemi
