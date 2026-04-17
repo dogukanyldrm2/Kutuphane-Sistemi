@@ -56,17 +56,17 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 3. `config.php` içindeki DB bilgilerini (Host, DB Name, User, Password) kendi sunucunuza göre düzenleyin.
 4. Tarayıcınızdan `index.php` dosyasını çalıştırın.
 
-###1️⃣ Repoyu Klonlayın
+1️⃣ Repoyu Klonlayın
 Bash
 git clone https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git
 cd Kutuphane-Sistemi
 
-###2️⃣ Veritabanı
+2️⃣ Veritabanı
 Sunucunuzun phpMyAdmin paneline girin ve bir veritabanı oluşturun.
 Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar (Import) seçeneği ile yükleyin.
 
 
-### 3️⃣ Yapılandırma
+3️⃣ Yapılandırma
 `config.php` dosyasını açarak aşağıdaki alanları kendi sisteminize göre güncelleyin:
 <pre>
 define('DB_HOST', 'localhost');
