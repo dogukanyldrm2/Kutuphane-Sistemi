@@ -68,24 +68,19 @@ Sunucunuzun phpMyAdmin paneline girin ve bir veritabanı oluşturun.
 
 Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar (Import) seçeneği ile yükleyin.
 
+ 3️⃣ Yapılandırma
+config.php dosyasını bir metin düzenleyici ile açarak veritabanı bağlantı bilgilerinizi kendi yerel veya sunucu ayarlarınıza göre güncelleyin:
 ### 3️⃣ Yapılandırma
-`config.php` dosyasını bir metin düzenleyici ile açarak veritabanı bağlantı bilgilerinizi kendi yerel veya sunucu ayarlarınıza göre güncelleyin:
+`config.php` dosyasını açarak aşağıdaki alanları kendi sisteminize göre güncelleyin:
 
-```php
-// Veritabanı Bağlantı Ayarları
-define('DB_HOST', 'localhost');      // Sunucu adresi (genellikle localhost)
-define('DB_NAME', 'library_system'); // Oluşturduğunuz veritabanı adı
-define('DB_USER', 'root');           // Veritabanı kullanıcı adınız
-define('DB_PASS', '');               // Veritabanı şifreniz
+text
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'veritabani_adi');
+define('DB_USER', 'kullanici_adi');
+define('DB_PASS', 'sifreniz');´´´
 
-4️⃣ Uygulamayı Çalıştırın
-
-Proje klasörünü lokal sunucu dizininize (htdocs veya www) taşıyın.
-
-Tarayıcınızdan uygulamaya erişin:
-
-Uygulama Adresi: http://localhost/Kutuphane-Sistemi/index.php
 ---
+
 
 ## ⚖️ Lisans
 
