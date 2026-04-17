@@ -84,6 +84,7 @@ Tarayıcınızdan uygulamaya erişin:
 Uygulama Adresi: http://localhost/Kutuphane-Sistemi/index.php
 
 
+⚖️
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Bu, kodun açık kaynak olduğu, ticari ve özel kullanıma izin verdiği, ancak yazılımın "olduğu gibi" sunulduğu ve geliştiricinin herhangi bir sorumluluk kabul etmediği anlamına gelir. 
 
 Detaylı bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
