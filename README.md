@@ -9,11 +9,6 @@
 
 Bu proje, geleneksel ve statik kütüphane otomasyonlarının sınırlarını aşarak, modern bir **"E-Kiralama"** ve **Dijital Cüzdan** platformuna dönüşmüş yenilikçi bir web uygulamasıdır. Klasik sistemlerdeki basit "kitabı al ve iade et" mantığının ötesine geçen bu yazılım, kullanıcılara güncel bir e-ticaret sitesindeymiş gibi dinamik bir deneyim sunmayı hedefler.
 
-Sistemin kalbinde, kullanıcıların hesaplarına entegre edilen **Cüzdan (Bakiye)** ve **Sepet Mimarisi** yer alır. Üyeler, kiralayacakları kitapları anında üzerlerine almak yerine önce sepetlerine ekler, toplam kiralama bedelini TL formatında görüntüler ve işlemlerini tek tıkla sanal bakiyeleri üzerinden tamamlarlar. Bu yapı, hem toplu işlemleri tek seferde halletmeyi sağlar hem de kütüphane ekosistemine gerçekçi bir finansal simülasyon katar.
-
-Gelişmiş kullanıcı deneyiminin yanı sıra, yönetimsel (Admin) tarafta da tam yetkili bir kontrol mekanizması sunulmaktadır. Yöneticiler; üyelerin cüzdanlarına bakiye yükleyebilir, kullanıcıların kiralama geçmişlerini anlık olarak izleyebilir ve sistemin merkezindeki **Duyuru Panosu** üzerinden tüm üyelere eşzamanlı bilgilendirmeler geçebilirler.
-Teknik açıdan veri güvenliğini (Data Integrity) merkeze alan sistem; kiralama anındaki kitabın değerini dondurarak (`rental_price`) sonradan oluşabilecek fiyat değişikliklerinden etkilenmemeyi sağlar. Ayrıca iade süreçlerinde, stok ve bakiye güncellemelerinin yarıda kesilip veri kaybı yaratmasını önlemek adına güçlü **PDO Transaction (`beginTransaction`)** mimarisiyle desteklenmiştir.
-
 ## 🚀 Öne Çıkan Özellikler
 * **💳 Dijital Cüzdan:** Kullanıcıların bakiyeleri üzerinden kitap kiralama ücretlerini ödeyebilmesi.
 * **🛒 Sepet Sistemi:** Kitapları tek tek değil, sepete ekleyerek toplu halde kiralama imkanı.
