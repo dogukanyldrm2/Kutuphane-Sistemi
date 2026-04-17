@@ -57,4 +57,12 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 4. Tarayıcınızdan `index.php` dosyasını çalıştırın.
 
 ---
+
+## ⚖️ Lisans
+
+Bu proje **MIT Lisansı** ile lisanslanmıştır. Bu, kodun açık kaynak olduğu, ticari ve özel kullanıma izin verdiği, ancak yazılımın "olduğu gibi" sunulduğu ve geliştiricinin herhangi bir sorumluluk kabul etmediği anlamına gelir. 
+
+Detaylı bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsiniz.
+---
+
 *Geliştirici Notu: Bu yazılım, modern PHP pratikleri ve güvenli kodlama standartları gözetilerek bir ekip çalışması sonucunda ortaya çıkarılmıştır.*
