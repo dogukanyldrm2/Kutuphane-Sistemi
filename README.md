@@ -49,6 +49,19 @@ Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştiril
 ## ⚙️ Hızlı Kurulum
 
 **1️⃣ Repoyu Klonlayın**
-```bash
+
+2️⃣ Veritabanı
+
+Sunucunuzun phpMyAdmin paneline girin ve bir veritabanı oluşturun.
+
+Proje içerisindeki library_system.sql dosyasını bu veritabanına İçe Aktar (Import) seçeneği ile yükleyin.
+
+3️⃣ Yapılandırma
+config.php dosyasını açarak aşağıdaki alanları kendi sisteminize göre güncelleyin:
+
+⚖️ Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır. Detaylı bilgi için LICENSE dosyasına göz atabilirsiniz.
+
+Geliştirici Notu: Bu yazılım, modern PHP pratikleri ve güvenli kodlama standartları gözetilerek bir ekip çalışması sonucunda ortaya çıkarılmıştır.
 git clone [https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git](https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git)
 cd Kutuphane-Sistemi
