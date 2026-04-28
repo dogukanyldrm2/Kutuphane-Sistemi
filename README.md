@@ -1,35 +1,54 @@
-# Kutuphane Sistemi - Guncellenmis Surum
+# 📚 Kütüphane Yönetim ve Dijital Cüzdan Sistemi
 
-Bu surumde uye ve admin tarafina yeni moduller eklendi:
+![PHP](https://img.shields.io/badge/PHP-8.X-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-PDO-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![CSS](https://img.shields.io/badge/UI-CUSTOM_CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-- Kitaplarda fiyat alani
-- Kitaplarda kapak resmi alani (`image_path`) 
-- Odunc al yerine sepet sistemi
-- Uye bakiyesi ile toplu kiralama
-- Hesabim ekrani ve sifre degistirme
-- Admin kullanici listeleme ve kullanicilarin aldigi kitaplari izleme
-- Admin tarafinda bakiye ekleme
+## 📌 Proje Hakkında
 
-## Yeni Dosyalar
+Bu proje, geleneksel ve statik kütüphane otomasyonlarının sınırlarını aşarak, modern bir **"E-Kiralama"** ve Dijital Cüzdan platformuna dönüşmüş yenilikçi bir web uygulamasıdır. Klasik sistemlerdeki basit "kitabı al ve iade et" mantığının ötesine geçen bu yazılım, kullanıcılara güncel bir e-ticaret sitesindeymiş gibi dinamik bir deneyim sunmayı hedefler.
 
-- `cart.php` -> sepete ekleme ve kiralama tamamlama
-- `account.php` -> uye hesap ekranı ve sifre degistirme
-- `users.php` -> admin kullanici ve kiralama yonetimi
+## 🚀 Öne Çıkan Özellikler
 
-## Veritabani Degisiklikleri
+* 💳 **Dijital Cüzdan:** Kullanıcıların bakiyeleri üzerinden kitap kiralama ücretlerini ödeyebilmesi.
+* 🛒 **Sepet Sistemi:** Kitapları tek tek değil, sepete ekleyerek toplu halde kiralama imkanı.
+* 🔒 **Güvenli İade:** `PDO Transaction` (`beginTransaction`) yapısı ile veri kaybı yaşanmadan kitap iadesi.
+* 📢 **Duyuru Panosu:** Yöneticilerin sistem üzerinden anlık duyuru yayınlayabilmesi.
+* 📉 **Fiyat Koruma:** Kiralama tarihindeki fiyatın (`rental_price`) sabitlenerek geçmişe dönük korunması.
 
-- `users.balance`
-- `books.price`
-- `books.image_path`
-- `borrows.rental_price`
-- `cart_items` tablosu
+## 🛠️ Teknik Mimari
 
-## Not
+Sistem, performans ve güvenlik odaklı modern PHP standartları ile geliştirilmiştir:
 
-Mevcut projede `partials/header.php`, `partials/footer.php` ve `assets/css/style.css` dosyalari yuklu degil. Bu nedenle yeni sayfalara link eklemek icin header menusu tarafinda asagidaki linkleri de eklemeniz gerekir:
+| Katman | Araç / Teknoloji | Teknik Detaylar |
+| :--- | :--- | :--- |
+| **Arka Uç** | PHP 8.x | `strict_types=1` tanımlaması ile katı tip güvenliği. |
+| **Veritabanı** | MySQL (PDO) | SQL Injection korumalı Prepared Statements mimarisi. |
+| **Ön Yüz** | Modern CSS | `:root` değişkenleri ile merkezi tema ve renk yönetimi. |
+| **Güvenlik** | RBAC | Rol Tabanlı Erişim Kontrolü (Yönetici / Üye ayrımı). |
 
-- `books.php`
-- `cart.php`
-- `my_loans.php`
-- `account.php`
-- `users.php` (sadece admin)
+## 👥 Proje Ekibi ve Görev Dağılımı
+
+| Birim | Ekip Üyeleri | Sorumluluk |
+| :--- | :--- | :--- |
+| **Proje Yöneticisi** | Muhammet Ali | Süreç yönetimi, denetim ve kalite kontrol. |
+| **Yazılım Geliştirme** | Alihan, Anvarbek | CRUD işlemleri, sepet algoritmaları ve DB yönetimi. |
+| **Veri Analizi** | Enes, İnci, Atamert, Eren, Medine, Muhammed, Yeliz, Emre, Seyran | Katalog verileri ve içerik araştırması. |
+| **GitHub & Dağıtım** | Doğukan, Erdi | Repo yönetimi, hosting kurulumları ve sürüm kontrolü. |
+| **Raporlama** | Levent | Proje ilerleme raporları ve dökümantasyon. |
+
+## 📅 4 Haftalık Yol Haritası (Roadmap)
+
+- [x] **1. Hafta:** Veritabanı şemasının tasarımı ve `auth.php` ile çekirdek bağlantı sisteminin kurulması.
+- [x] **2. Hafta:** Kitap yönetim modülleri ve CSS tema motorunun (`style.css`) oluşturulması.
+- [x] **3. Hafta:** Sepet mantığı, bakiye kontrol sistemleri ve ödünç alma süreçlerinin kodlanması.
+- [x] **4. Hafta:** Güvenli iade sistemi, duyuru paneli ve final canlı testlerinin tamamlanması.
+
+---
+
+## ⚙️ Hızlı Kurulum
+
+**1️⃣ Repoyu Klonlayın**
+```bash
+git clone [https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git](https://github.com/dogukanyldrm2/Kutuphane-Sistemi.git)
+cd Kutuphane-Sistemi
